@@ -13,6 +13,7 @@
 #include <map>
 #include <charconv>
 #include <unistd.h>
+#include <cassert>
 
 void set_non_blocking(int fd)
 {

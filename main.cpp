@@ -116,7 +116,7 @@ int main() try
     };
     vector<thread> threads;
     for (size_t i = 1; i < config.GetNumThreads(); ++i)
-        threads.push_back(thread_function);
+        threads.push_back(thread(thread_function));
     thread_function();
 }
 catch (const exception& e)
